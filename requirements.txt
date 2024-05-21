@@ -1,0 +1,15 @@
+# Requerimientos para la generación de PDF
+reportlab==3.6.8
+
+# Bibliotecas adicionales si decides extender la funcionalidad:
+# Por ejemplo, si necesitas manejar imágenes en tu aplicación
+Pillow==9.0.1
+
+# Biblioteca para testing, si decides incluir tests automáticos
+unittest2==1.1.0  # solo si necesitas funcionalidades que no están en la librería unittest estándar
+
+# Si necesitas trabajar con entornos de aplicaciones web o APIs
+flask==2.0.3  # Opcional, para proyectos web
+
+# Dependencias para la manipulación avanzada de textos o locales
+pycountry==20.7.3  # Opcional, para manejo de localización o codificación de caracteres
