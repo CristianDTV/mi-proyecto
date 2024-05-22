@@ -1,3 +1,5 @@
+# braille_conversion.py
+
 # Diccionario de mapeo de caracteres a braille
 mapeo_braille = {
     'a': '⠁', 'b': '⠃', 'c': '⠉', 'd': '⠙', 'e': '⠑',
@@ -15,16 +17,17 @@ mapeo_braille = {
 }
 
 def texto_a_braille(texto):
-    """ Convierte texto alfabético a braille basado en el mapeo_braille. """
     braille = ''
     for caracter in texto:
         char_lower = caracter.lower()
-        if caracter.isupper() and char_lower in mapeo_braille:
-            braille += '⠨'  # Prefijo para mayúsculas en braille
-        if char_lower in mapeo_braille:
-            braille += mapeo_braille[char_lower]
+        if caracter.isdigit():
+            braille += '⠼' + mapeo_braille[char_lower]
         else:
-            braille += ' '  # Añadir espacio para caracteres no mapeados
+            numero_encontrado = False
+            if caracter.isupper() and char_lower in mapeo_braille:
+                braille += '⠨'
+            if char_lower in mapeo_braille:
+                braille += mapeo_braille[char_lower]
+            else:
+                braille += ' '
     return braille
-
-# Puedes añadir más funciones relacionadas con braille si es necesario.
