@@ -63,4 +63,4 @@ Queremos agradecer a todos los desarrolladores y probadores que han contribuido 
 
 ## Contacto
 
- Para más información, por favor contacte a CristianDTV.
+ Para más información, por favor contacte a KRD Consultech.
