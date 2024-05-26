@@ -1,15 +1,17 @@
-# Requerimientos para la generación de PDF
+# Dependencias principales para la generación de PDF
 reportlab==3.6.8
 
-# Bibliotecas adicionales si decides extender la funcionalidad:
-# Por ejemplo, si necesitas manejar imágenes en tu aplicación
+# CustomTkinter para la interfaz de usuario moderna
+customtkinter==5.0.3
+
+# Opcional: biblioteca para manejar imágenes, si necesitas procesar imágenes para los PDFs
 Pillow==9.0.1
 
-# Biblioteca para testing, si decides incluir tests automáticos
-unittest2==1.1.0  # solo si necesitas funcionalidades que no están en la librería unittest estándar
+# Opcional: para pruebas unitarias más allá de las capacidades estándar de unittest
+unittest2==1.1.0  # Solo si usas características que no están en unittest
 
-# Si necesitas trabajar con entornos de aplicaciones web o APIs
-flask==2.0.3  # Opcional, para proyectos web
+# Opcional: para aplicaciones web que puedan interactuar con tu sistema de traducción a braille
+flask==2.0.3
 
-# Dependencias para la manipulación avanzada de textos o locales
-pycountry==20.7.3  # Opcional, para manejo de localización o codificación de caracteres
+# Opcional: para manejo de localización o codificación de caracteres
+pycountry==20.7.3
